@@ -34,7 +34,7 @@ int main()
     /* string */
     printf("\n");
     printf("Enter a string: \n");
-    scanf("%s", e); // NOTE: no &
+    scanf(" %[^\n]s", e); // NOTE: no &; " %[^\n]s" => will allow the string to have whitespaces.
 
     /* printing */
     printf("\n");
